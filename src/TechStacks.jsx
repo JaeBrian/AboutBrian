@@ -19,6 +19,7 @@ import html from './assets/html.png';
 import css from './assets/css.png';
 import docker from './assets/docker.png';
 import aws from './assets/aws.png';
+import { useState, useRef, useEffect } from 'react';
 
 const TechStacks = () => {
   return (

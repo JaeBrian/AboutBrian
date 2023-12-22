@@ -26,12 +26,16 @@ body {
   opacity: 1;
   background-image: radial-gradient(#3b3b3b 1.35px, #242424 1.35px);
   background-size: 27px 27px;
+  z-index: -999;
 }
 
 .about-me {
+  height: 95vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin-bottom: 3vh;
 }
 
@@ -61,7 +65,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  z-index: 50;
   font-size: 65px;
   font-weight: 500;
 }
@@ -102,10 +106,11 @@ body {
 }
 
 #bio {
+  z-index: 50;
   margin-top: 30px;
   margin-bottom: 0px;
   width: 50vw;
-  font-size: 2vh;
+  font-size: 2.1vh;
   text-align: left;
 }
 
@@ -141,7 +146,7 @@ body {
 
 .projectpage {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .tech {
