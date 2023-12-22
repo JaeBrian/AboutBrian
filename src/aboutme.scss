@@ -1,0 +1,97 @@
+$base-gray: #5b5959;
+$gray-10: lighten($base-gray, 5%);
+$gray-20: lighten($base-gray, 10%);
+
+.mountains,
+.mountains1,
+.mountains2 {
+  position: absolute;
+  border: 1px solid black;
+
+  z-index: 0;
+  right: 0;
+  background-color: black;
+  bottom: 0; /* Added line */
+}
+
+.mountains {
+  left: 0;
+  clip-path: polygon(
+    0 100%,
+    100% 100%,
+    100% 80%,
+    85% 69%,
+    61% 50%,
+    31% 41%,
+    0 22%
+  );
+  z-index: 3;
+  background-color: $gray-20;
+  height: 55%;
+  width: 50%;
+}
+
+.mountains1 {
+  right: 8%;
+  clip-path: polygon(
+    9% 100%,
+    100% 100%,
+    100% 26%,
+    88% 43%,
+    68% 48%,
+    50% 63%,
+    28% 75%
+  );
+  z-index: 4;
+  background-color: $gray-10;
+  height: 65%;
+  width: 59%;
+}
+
+.mountains2 {
+  background-color: $base-gray;
+  clip-path: polygon(
+    0% 100%,
+    100% 100%,
+    100% 26%,
+    82% 39%,
+    74% 55%,
+    51% 64%,
+    27% 83%
+  );
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  height: 80%;
+  width: 50%;
+}
+
+.mountains3 {
+  position: absolute;
+  background: linear-gradient(rgb(2, 184, 244), white);
+  clip-path: polygon(
+    0 100%,
+    0 67%,
+    27% 70%,
+    46% 66%,
+    69% 68%,
+    100% 65%,
+    100% 100%
+  );
+
+  z-index: 0;
+  bottom: 0;
+  height: 90%;
+  width: 95%;
+}
+
+.sun {
+  position: absolute;
+  height: 50%; /* Adjusted to match width for a perfect circle */
+  width: 40%;
+  top: 43%; /* Example: added 'px' as the unit */
+  z-index: 0;
+  right: 77%;
+  background-color: #ffeeaf;
+  clip-path: circle(50% at 50% 50%);
+}
