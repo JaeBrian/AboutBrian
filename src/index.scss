@@ -31,7 +31,6 @@ body {
 
 .about-me {
   height: 95vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,15 +63,18 @@ body {
 .intro {
   display: flex;
   align-items: center;
+  position: relative;
   justify-content: center;
-  z-index: 50;
-  font-size: 65px;
+  z-index: 0;
+  font-size: 3vw;
   font-weight: 500;
 }
 
 .fullstack {
   display: flex;
-  font-size: 65px;
+  position: relative;
+  font-size: 3vw;
+  z-index: 0;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 1vw;
@@ -106,10 +108,10 @@ body {
 }
 
 #bio {
-  z-index: 50;
+  z-index: 0;
   margin-top: 30px;
   margin-bottom: 0px;
-  width: 50vw;
+  width: 40%;
   font-size: 2.1vh;
   text-align: left;
 }
