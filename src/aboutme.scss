@@ -87,11 +87,11 @@ $gray-20: lighten($base-gray, 10%);
 
 .sun {
   position: absolute;
-  height: 50vw; /* Adjusted to match width for a perfect circle */
-  width: 50vw;
+  height: 36vw; /* Adjusted to match width for a perfect circle */
+  width: 36vw;
   top: 36%; /* Example: added 'px' as the unit */
   z-index: 0;
-  right: 75%;
+  right: 77%;
   background-color: #ffeeaf;
   clip-path: circle(50% at 50% 50%);
 }
