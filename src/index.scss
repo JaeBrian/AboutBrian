@@ -1,0 +1,151 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #242424;
+  opacity: 1;
+  background-image: radial-gradient(#3b3b3b 1.35px, #242424 1.35px);
+  background-size: 27px 27px;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+.dot-container {
+  display: flex;
+
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(2, 217, 2);
+    border-radius: 50%;
+    margin: 7px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: none;
+  width: 100vw;
+  height: 30vh;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 65px;
+  font-weight: 500;
+}
+
+.fullstack {
+  display: flex;
+  font-size: 65px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1vw;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 650;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+  width: 19vw;
+
+  #info {
+    width: 130px;
+    height: 50px;
+    margin: 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  #info:hover {
+    cursor: pointer;
+
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1),
+      -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.25),
+      0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.25);
+    transform: scale(1.1, 1.1);
+  }
+}
+
+#bio {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  width: 50vw;
+  font-size: 2vh;
+  text-align: left;
+}
+
+.boxes:hover {
+  background-color: rgba(255, 255, 255, 0.283);
+  transform: scale(1.05);
+}
+
+.stack-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stacks {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 4 columns */
+  grid-template-rows: repeat(4, 1fr); /* 5 rows */
+  gap: 0.8vh; /* Space between grid items */
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh; /* Adjust height as needed */
+  width: 15vw; /* Adjust width as needed */
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+.projectpage {
+  height: 100vh;
+  width: 100vw;
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8vh;
+}
