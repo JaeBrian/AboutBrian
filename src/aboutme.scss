@@ -79,16 +79,36 @@ $gray-20: lighten($base-gray, 10%);
     100% 100%
   );
 
-  z-index: 0;
+  z-index: 2;
   bottom: 0;
   height: 90%;
-  width: 95%;
+  width: 100%;
+}
+
+.mountains4 {
+  position: absolute;
+  background: linear-gradient(rgb(1, 172, 229), rgb(115, 107, 235));
+  clip-path: polygon(
+    0 100%,
+    0 67%,
+    27% 70%,
+    46% 66%,
+    69% 68%,
+    100% 65%,
+    100% 100%
+  );
+
+  z-index: 1;
+  bottom: 0;
+  height: 97%;
+  width: 100%;
 }
 
 .sun {
+  transition: transform 0.3s ease, opacity 0.3s ease;
   position: absolute;
-  height: 36vw; /* Adjusted to match width for a perfect circle */
-  width: 36vw;
+  height: 28vw; /* Adjusted to match width for a perfect circle */
+  width: 28vw;
   top: 36%; /* Example: added 'px' as the unit */
   z-index: 0;
   right: 77%;

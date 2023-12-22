@@ -3,8 +3,20 @@ import Projects from './Projects';
 import 'animate.css';
 import NavBar from './NavBar';
 import './aboutme.scss';
+import { useState, useRef, useEffect } from 'react';
 
 const LandingPage = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
       <NavBar />
@@ -12,11 +24,15 @@ const LandingPage = () => {
         <div className="container">
           <div
             className="sun animate__animated animate__bounceInDown"
-            style={{ animationDelay: '2s' }}
+            style={{
+              animationDelay: '2s',
+            }}
           ></div>
           <div
             className="mountains animate__animated animate__bounceInRight"
-            style={{ animationDelay: '1s' }}
+            style={{
+              animationDelay: '1s',
+            }}
           ></div>
           <div
             className="mountains1  animate__animated  animate__bounceInLeft"
@@ -31,6 +47,10 @@ const LandingPage = () => {
             style={{ animationDelay: '1.2s' }}
           ></div>
           <div
+            className="mountains4  animate__animated animate__bounceIn"
+            style={{ animationDelay: '1.5s' }}
+          ></div>
+          <div
             className="intro animate__animated animate__backInDown"
             style={{ animationDelay: '1.5s' }}
           >
@@ -41,7 +61,9 @@ const LandingPage = () => {
           <p
             id="bio"
             className="animate__animated animate__backInLeft"
-            style={{ animationDelay: '1.8s' }}
+            style={{
+              animationDelay: '1.8s',
+            }}
           >
             ABOUT ME: Fullstack developer with experience in various different
             technologies. My greatest project being Zusty, which is a Zustand
