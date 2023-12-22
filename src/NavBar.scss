@@ -1,0 +1,45 @@
+.button {
+  background: none;
+  color: #ffb000;
+  border: none;
+  cursor: pointer;
+  transition: color 150ms ease;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    font-size: 11px;
+  }
+}
+
+.buttons {
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: color 150ms ease;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: white;
+}
+
+.buttons:hover {
+  color: #ffb000;
+}
+
+.button-container {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #333333;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  align-items: center;
+  height: 5vh;
+  width: 100vw;
+}
