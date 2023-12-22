@@ -9,7 +9,7 @@ const LandingPage = () => {
       <NavBar />
       <div className="about-me">
         <div className="container">
-          <div className="intro animate__animated animate__slideInLeft">
+          <div className="intro animate__animated animate__tada">
             Hello, I&apos;m Brian!
             <p className="fullstack ">Fullstack Developer</p>
           </div>
