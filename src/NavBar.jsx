@@ -20,7 +20,7 @@ const NavBar = () => {
         ABOUT
       </Link>
       <Link
-        to="demo"
+        to="project"
         smooth={true}
         duration={500}
         className="button"
@@ -28,20 +28,17 @@ const NavBar = () => {
         exact="true"
         offset={-100}
       >
-        DEMO
+        PROJECTS
       </Link>
-      <Link
-        to="team"
-        smooth={true}
-        duration={500}
-        className="button"
-        spy={true}
-        exact="true"
-        offset={600}
+      <a
+        id="linkedin"
+        className="buttons"
+        href="https://www.linkedin.com/in/brian-jaekook-lee/"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        TEAM
-      </Link>
-
+        LINKEDIN
+      </a>
       <a
         id="chromebutton"
         className="buttons"
@@ -51,26 +48,10 @@ const NavBar = () => {
       >
         CHROME STORE
       </a>
-      <a
-        id="npmbutton"
-        className="buttons"
-        href="https://www.npmjs.com/package/zustymiddleware"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        NPM
-      </a>
+
       <a
         className="buttons"
-        href="https://medium.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        MEDIUM
-      </a>
-      <a
-        className="buttons"
-        href="https://github.com/oslabs-beta/Zusty"
+        href="https://github.com/JaeBrian"
         target="_blank"
         rel="noopener noreferrer"
       >
