@@ -3,80 +3,88 @@ import Projects from './Projects';
 import 'animate.css';
 import NavBar from './NavBar';
 import './aboutme.scss';
-import { useState, useRef, useEffect } from 'react';
+import './index.scss';
+import linkedin from './assets/linkedin.png';
+import git from './assets/git.png';
 
 const LandingPage = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <>
       <NavBar />
-      <div className="about-me">
-        <div className="container">
-          <div
-            className="sun animate__animated animate__bounceInDown"
-            style={{
-              animationDelay: '2s',
-            }}
-          ></div>
-          <div
-            className="mountains animate__animated animate__bounceInRight"
-            style={{
-              animationDelay: '1s',
-            }}
-          ></div>
-          <div
-            className="mountains1  animate__animated  animate__bounceInLeft"
-            style={{ animationDelay: '0.7s' }}
-          ></div>
-          <div
-            className="mountains2  animate__animated animate__bounceInLeft"
-            style={{ animationDelay: '0.5s' }}
-          ></div>
-          <div
-            className="mountains3  animate__animated animate__bounceIn"
-            style={{ animationDelay: '1.2s' }}
-          ></div>
-          <div
-            className="mountains4  animate__animated animate__bounceIn"
-            style={{ animationDelay: '1.5s' }}
-          ></div>
-          <div
-            className="intro animate__animated animate__backInDown"
-            style={{ animationDelay: '1.5s' }}
-          >
-            Hello, I&apos;m Brian!
-            <p className="fullstack ">Fullstack Developer</p>
+      <div class="w-90 h-screen flex items-center justify-center p-20">
+        <div class="grid grid-cols-5 grid-rows-5 gap-4  w-full h-full">
+          <div class="flex-center grid-card items-start rounded-radius p-5 col-span-2 row-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-1">
+            PICTURE OF ME HERE
+          </div>
+          <div class="flex-center items-start grid-card rounded-radius col-span-2 row-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-2 ">
+            <div className="text-lg">
+              <p className="fullstack">Fullstack Developer</p>
+              Hi there! I'm Brian, I am a software engineer who loves creating,
+              innovating, and buildling things that other people enjoy. I love
+              learning new technologies and thats what I enjoy the most about
+              software engineering, the learning never stops. If I am not
+              coding, you can catch me playing some auto chess games, watching
+              Primeagen, or watching Ratatouille.
+            </div>
           </div>
 
-          <p
-            id="bio"
-            className="animate__animated animate__backInLeft"
-            style={{
-              animationDelay: '1.8s',
-            }}
-          >
-            ABOUT ME: Fullstack developer with experience in various different
-            technologies. My greatest project being Zusty, which is a Zustand
-            Developer Tool made under oslabs. It helps developers using Zustand
-            debug their application with time traveling, state snapshots, action
-            logs, render metrics, and a component tree.
-          </p>
+          <div class="flex-center  grid-card rounded-radius row-span-4 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-4">
+            LIST OF PROJECTS
+          </div>
+
+          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-5">
+            <img class="object-contain w-10 h-10" src={linkedin} />
+          </div>
+          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-5">
+            <img class="object-contain w-12 h-12" src={git}></img>
+          </div>
+          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-5">
+            <div class="text-2xl font-bold">RESUME</div>
+          </div>
+          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-5">
+            <div class="text-2xl font-bold">ZUSTY</div>
+          </div>
+
+          <div class="flex-center  grid-card rounded-radius col-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-5">
+            <div class="text-xl">
+              Specialized in Javascript, React, Node, Express, Redux
+            </div>
+          </div>
+          <div class="flex-center  grid-card rounded-radius row-span-2 col-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-6">
+            PROBABLY PROJECT HERE
+          </div>
+
+          <div class="flex-center  grid-card rounded-radius col-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-8">
+            Content 8
+          </div>
+          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-8">
+            OPEN SOURCE
+          </div>
         </div>
       </div>
-      <TechStacks />
-      <Projects />
+      <TechStacks className="whiteback" />
     </>
   );
 };
 
 export default LandingPage;
+
+{
+  /* <div className="clickables"></div>
+<div className="about-me">
+  <div className="container >
+    <div className="intro animate__animated animate__backInDown">
+      Hello, I&apos;m Brian!
+      <p className="fullstack ">Fullstack Developer /p>
+    </div>
+
+    <p id="bio" className="animate__animated animate__backInLeft">
+      I am a software engineer who loves creating, innovating, and
+      buildling things that other people enjoy. Building great things as
+      a software engineer is like sharing great food, you get to watch
+      it be enjoyed! I love learning new technologies and thats what I
+      enjoy the most about software engineer ng, the learning never       stops.
+    </p>
+  </div>
+</div> */
+}

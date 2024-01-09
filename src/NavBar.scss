@@ -30,7 +30,12 @@
 .button-container {
   position: -webkit-sticky;
   position: sticky;
-  background-color: #333333;
+  background-color: rgba(
+    51,
+    51,
+    51,
+    0.2
+  ); /* Using RGBA for semi-transparent background */
   top: 0;
   z-index: 1000;
   display: flex;

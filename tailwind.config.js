@@ -5,7 +5,24 @@ export default {
     './public/**/*.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        radius: '.5rem',
+      },
+      scale: {
+        102: '1.02',
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.flex-center': {
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        },
+      });
+    },
+  ],
 };
