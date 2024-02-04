@@ -6,6 +6,7 @@ import './aboutme.scss';
 import './index.scss';
 import linkedin from './assets/linkedin.png';
 import git from './assets/git.png';
+import brian from './assets/brian.png';
 
 const LandingPage = () => {
   return (
@@ -13,12 +14,14 @@ const LandingPage = () => {
       <NavBar />
       <div class="w-90 h-screen flex items-center justify-center p-20">
         <div class="grid grid-cols-5 grid-rows-5 gap-4  w-full h-full">
-          <div class="flex-center grid-card items-start rounded-radius p-5 col-span-2 row-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-1">
-            PICTURE OF ME HERE
+          <div class="flex-center grid-card items-start rounded-radius  col-span-2 row-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-1">
+            <img class="object-contain w-full h-full" src={brian} />
           </div>
-          <div class="flex-center items-start grid-card rounded-radius col-span-2 row-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-2 ">
-            <div className="text-lg">
-              <p className="fullstack">Fullstack Developer</p>
+          <div class="flex justify-center items-center grid-card rounded-radius col-span-2 row-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-2 ">
+            <div className="text-lg text-center">
+              <p className="flex-center text-center text-3xl fullstack">
+                Fullstack Developer
+              </p>
               Hi there! I'm Brian, I am a software engineer who loves creating,
               innovating, and buildling things that other people enjoy. I love
               learning new technologies and thats what I enjoy the most about
@@ -35,13 +38,13 @@ const LandingPage = () => {
           <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-5">
             <img class="object-contain w-10 h-10" src={linkedin} />
           </div>
-          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-5">
+          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-6">
             <img class="object-contain w-12 h-12" src={git}></img>
           </div>
-          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-5">
+          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-7">
             <div class="text-2xl font-bold">RESUME</div>
           </div>
-          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-5">
+          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-8">
             <div class="text-2xl font-bold">ZUSTY</div>
           </div>
 
@@ -54,15 +57,16 @@ const LandingPage = () => {
             PROBABLY PROJECT HERE
           </div>
 
-          <div class="flex-center  grid-card rounded-radius col-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-8">
-            Content 8
+          <div class="flex-center text-l grid-card rounded-radius col-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-8">
+            Interests: Buildling Keyboards, Building PCs, Collecting Mystery
+            Boxes, and Ratatuoille
           </div>
           <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-8">
             OPEN SOURCE
           </div>
         </div>
       </div>
-      <TechStacks className="whiteback" />
+      {/* <TechStacks className="whiteback" /> */}
     </>
   );
 };
