@@ -31,7 +31,7 @@ body {
   background-image: radial-gradient(#3b3b3b 1.35px, #242424 1.35px);
   background-size: 28px 28px;
   z-index: -999;
-  height: 400vh;
+  height: 123vh;
 }
 
 .about-me {
@@ -127,9 +127,9 @@ body {
 
 .stacks {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 4 columns */
-  grid-template-rows: repeat(4, 1fr); /* 5 rows */
-  gap: 0.8vh; /* Space between grid items */
+  grid-template-columns: repeat(20, 1fr); /* 4 columns */
+  grid-template-rows: repeat(1, 1fr); /* 5 rows */
+  gap: 0.5vh; /* Space between grid items */
 }
 
 .boxes {
@@ -137,7 +137,7 @@ body {
 
   align-items: center;
   justify-content: center;
-  height: 15vh; /* Adjust height as needed */
+  height: 8vh; /* Adjust height as needed */
   /* Adjust width as needed */
 
   border-radius: 5px;
@@ -228,8 +228,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  height: 100vh;
 }
 
 .delay-1 {
