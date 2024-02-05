@@ -107,9 +107,9 @@ $gray-20: lighten($base-gray, 10%);
 .sun {
   transition: transform 0.3s ease, opacity 0.3s ease;
   position: absolute;
-  height: 28vw; /* Adjusted to match width for a perfect circle */
-  width: 28vw;
-  top: 36%; /* Example: added 'px' as the unit */
+  height: 35vw; /* Adjusted to match width for a perfect circle */
+  width: 35vw;
+  top: 38%; /* Example: added 'px' as the unit */
   z-index: 0;
   right: 77%;
   background-color: #ffeeaf;
