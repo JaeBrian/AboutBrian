@@ -35,16 +35,37 @@ const LandingPage = () => {
             LIST OF PROJECTS
           </div>
 
-          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-5">
+          <div
+            class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-5"
+            onClick={() =>
+              window.open(
+                'https://www.linkedin.com/in/brian-jaekook-lee/',
+                '_blank'
+              )
+            }
+          >
             <img class="object-contain w-10 h-10" src={linkedin} />
           </div>
-          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-6">
+
+          <div
+            class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-6"
+            onClick={() => window.open('https://github.com/JaeBrian', '_blank')}
+          >
             <img class="object-contain w-12 h-12" src={git}></img>
           </div>
+
           <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-7">
             <div class="text-2xl font-bold">RESUME</div>
           </div>
-          <div class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-8">
+          <div
+            class="flex-center  grid-card rounded-radius col-span-1 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-8"
+            onClick={() =>
+              window.open(
+                'https://chromewebstore.google.com/detail/zusty/ckdnkkilcbkocfdpcaohdehnbeaefndo',
+                '_blank'
+              )
+            }
+          >
             <div class="text-2xl font-bold">ZUSTY</div>
           </div>
 
