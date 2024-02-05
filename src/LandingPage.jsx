@@ -33,7 +33,7 @@ const LandingPage = () => {
           </div>
 
           <div class="flex-center  grid-card rounded-radius row-span-4 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-4">
-            LIST OF PROJECTS
+            PROJECTS HERE
           </div>
 
           <div
