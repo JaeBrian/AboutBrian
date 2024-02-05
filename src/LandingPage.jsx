@@ -7,6 +7,7 @@ import './index.scss';
 import linkedin from './assets/linkedin.png';
 import git from './assets/git.png';
 import brian from './assets/brian.png';
+import proj1 from './assets/proj1.jpg';
 
 const LandingPage = () => {
   return (
@@ -69,14 +70,14 @@ const LandingPage = () => {
             <div class="text-2xl font-bold">ZUSTY</div>
           </div>
 
-          <div class="flex-center  grid-card rounded-radius col-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-5">
-            <div class="text-xl">
-              Specialized in Javascript, React, Node, Express, Redux
+          <div class="flex justify-center items-center grid-card rounded-radius col-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-5">
+            <div class="text-center text-xl">
+              SKILLS: Typescript, Javascript, React, Node, Express, Redux, Jest,
+              SQL, noSQL, Next.js, Zustand, GraphQL, D3, Tailwind, MUI, Webpack,
+              HTML, CSS, Git, Docker, AWS
             </div>
           </div>
-          <div class="flex-center  grid-card rounded-radius row-span-2 col-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-6">
-            PROBABLY PROJECT HERE
-          </div>
+          <div class="flex-center object-contain grid-card rounded-radius row-span-2 col-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-6"></div>
 
           <div class="flex-center text-l grid-card rounded-radius col-span-2 bg-gray-600 p-4 bg-opacity-45 hover:scale-102 transition-transform duration-200 animate__animated animate__fadeIn delay-8">
             Interests: Buildling Keyboards, Building PCs, Collecting Mystery
@@ -87,7 +88,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      {/* <TechStacks className="whiteback" /> */}
+      <TechStacks className="whiteback" />
     </>
   );
 };

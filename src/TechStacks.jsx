@@ -66,222 +66,72 @@ const TechStacks = () => {
   return (
     <>
       <div className="whiteback">
-        <div
-          className={`tech ${
-            observed.tech ? 'animate__animated animate__jackInTheBox' : ''
-          }`}
-          ref={addToRefs}
-          id="tech"
-        >
+        {/* <div className="tech" id="tech">
           TECHNOLOGIES{' '}
-        </div>
+        </div> */}
         <div className="stack-container">
           <div className="stacks">
-            <div
-              className={`boxes ${
-                observed.react ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '0.1s' }}
-              ref={addToRefs}
-              id="react"
-            >
+            <div className="boxes" id="react">
               <img className="boxes" id="react" src={react}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.jest ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '0.13s' }}
-              ref={addToRefs}
-              id="jest"
-            >
+            <div className="boxes" id="jest">
               <img className="boxes" id="jest" src={jest}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.node ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '0.16s' }}
-              ref={addToRefs}
-              id="node"
-            >
+            <div className="boxes" id="node">
               <img className="boxes" id="node" src={node}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.mongo ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '0.19s' }}
-              ref={addToRefs}
-              id="mongo"
-            >
+            <div className="boxes" id="mongo">
               <img className="boxes" id="mongo" src={mongodb}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.boxes ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '0.22s' }}
-              ref={addToRefs}
-              id="boxes"
-            >
+            <div className="boxes" id="boxes">
               <img className="boxes" src={js}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.boxes ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '0.25s' }}
-              ref={addToRefs}
-            >
+            <div className="boxes" ref={addToRefs}>
               <img className="boxes" src={zustand}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.boxes ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '0.28s' }}
-              ref={addToRefs}
-            >
+            <div className="boxes" ref={addToRefs}>
               <img className="boxes" src={ts}></img>
             </div>
 
-            <div
-              className={`boxes ${
-                observed.redux ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '0.31s' }}
-              ref={addToRefs}
-              id="redux"
-            >
+            <div className="boxes" id="redux">
               <img className="boxes" id="redux" src={redux}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.vite ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '.34s' }}
-              ref={addToRefs}
-              id="vite"
-            >
+            <div className="boxes" id="vite">
               <img className="boxes" id="vite" src={vite}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.graphql
-                  ? 'animate__animated animate__jackInTheBox'
-                  : ''
-              }`}
-              style={{ animationDelay: '.37s' }}
-              ref={addToRefs}
-              id="graphql"
-            >
+            <div className="boxes" id="graphql">
               <img className="boxes" id="graphql" src={graphql}></img>
             </div>
 
-            <div
-              className={`boxes ${
-                observed.d3 ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '.4s' }}
-              ref={addToRefs}
-              id="d3"
-            >
+            <div className="boxes" id="d3">
               <img className="boxes" id="d3" src={d3}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.tailwind
-                  ? 'animate__animated animate__jackInTheBox'
-                  : ''
-              }`}
-              style={{ animationDelay: '.43s' }}
-              ref={addToRefs}
-              id="tailwind"
-            >
+            <div className="boxes" id="tailwind">
               <img id="tailwind" className="boxes" src={tailwind}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.mui ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '.46s' }}
-              ref={addToRefs}
-              id="mui"
-            >
+            <div className="boxes" id="mui">
               <img className="boxes" id="mui" src={mui}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.webpack
-                  ? 'animate__animated animate__jackInTheBox'
-                  : ''
-              }`}
-              style={{ animationDelay: '.49s' }}
-              ref={addToRefs}
-              id="webpack"
-            >
+            <div className="boxes" id="webpack">
               <img className="boxes" id="webpack" src={webpack}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.sql ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '.52s' }}
-              ref={addToRefs}
-              id="sql"
-            >
+            <div className="boxes" id="sql">
               <img className="boxes" id="sql" src={sql}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.html ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '.55s' }}
-              ref={addToRefs}
-              id="html"
-            >
+            <div className="boxes" id="html">
               <img className="boxes" id="html" src={html}></img>
             </div>
 
-            <div
-              className={`boxes ${
-                observed.github ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '.58s' }}
-              ref={addToRefs}
-              id="github"
-            >
+            <div className="boxes" id="github">
               <img className="boxes" id="github" src={github}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.css ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '.61s' }}
-              ref={addToRefs}
-              id="css"
-            >
+            <div className="boxes" id="css">
               <img className="boxes" id="css" src={css}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.docker ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '.64s' }}
-              ref={addToRefs}
-              id="docker"
-            >
+            <div className="boxes" id="docker">
               <img className="boxes" id="docker" src={docker}></img>
             </div>
-            <div
-              className={`boxes ${
-                observed.aws ? 'animate__animated animate__jackInTheBox' : ''
-              }`}
-              style={{ animationDelay: '.67s' }}
-              ref={addToRefs}
-              id="aws"
-            >
+            <div className="boxes" id="aws">
               <img className="boxes" id="aws" src={aws}></img>
             </div>
           </div>
